@@ -1,0 +1,14 @@
+{
+  "name": "edtechhut",
+  "version": "1.0.0",
+  "description": "Educational Hub for New Generation Students",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Md Mehedi Hasan (gitmehedi)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
