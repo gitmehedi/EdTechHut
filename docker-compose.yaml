@@ -1,0 +1,17 @@
+version: '3.8'
+name: 'edtechhut'
+
+services:
+  mongo:
+    image: mongo
+    container_name: edtechhut
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME = root
+      - MONGO_INITDB_ROOT_Password = code200!
+      - MONGO_INITDB_DATABASE = edtechhut
+    ports:
+      - 27017:27017
+volumes:
+  mongoStorage: 
+
