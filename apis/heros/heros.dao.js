@@ -7,8 +7,15 @@ herosSchema.statics = {
         hero.save(cb);
     },
 
-    get: function(query, cb) {
-        this.find(query, cb);
+    get: async function(query, res) {
+        const tours = await this.find();
+        res.status(200).json({
+            status: 'sucess',
+            results: tours.length,
+            data: {
+                tours,
+            },
+        });
     },
 
     getByName: function(query, cb) {
