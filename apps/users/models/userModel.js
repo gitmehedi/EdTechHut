@@ -1,4 +1,5 @@
-const manager = require('../../db/dbm');
+const rootPath = require('path').resolve('./');
+const manager = require(rootPath+'/db/dbm');
 
 const name = "Users";
 const tblName = 'users';
@@ -34,5 +35,4 @@ module.exports = {
     create,
     update,
     unlink
-
 }
